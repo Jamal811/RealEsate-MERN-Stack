@@ -289,7 +289,9 @@ const Profile = () => {
                 <p className="text-red-700 mt-5">
                   {showDeleteListingsError ? "Error deleting the listings" : ""}
                 </p>
-                <button className="text-green-700 uppercase">Edit</button>
+                <Link to={`/update-listing/${listing._id}`}>
+                  <button className="text-green-700 uppercase">Edit</button>
+                </Link>
               </div>
             </div>
           ))}
