@@ -284,8 +284,11 @@ const Profile = () => {
                   onClick={() => handleListingDelete(listing._id)}
                   className="text-red-700 uppercase"
                 >
-                  {showDeleteListingsError ? "Something went wrong" : "Delete"}
+                  Delete
                 </button>
+                <p className="text-red-700 mt-5">
+                  {showDeleteListingsError ? "Error deleting the listings" : ""}
+                </p>
                 <button className="text-green-700 uppercase">Edit</button>
               </div>
             </div>
